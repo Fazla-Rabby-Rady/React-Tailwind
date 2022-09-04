@@ -7,7 +7,7 @@ const IndexNavbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
-      <nav className="w-full flex flex-wrap  justify-between bg-white shadow-lg px-2 py-2 top-0 fixed">
+      <nav className="w-full flex flex-wrap  justify-between bg-white shadow-lg px-2 py-2 z-50 top-0 fixed">
         <div className="container px-4 mx-auto flex items-center flex-wrap  justify-between lg:px-[10rem] lg:flex-row lg:h-12">
           <div className="w-full px-2 flex items-center justify-between lg:block lg:justify-start lg:w-auto lg:pb-5">
               <Link to="/"
