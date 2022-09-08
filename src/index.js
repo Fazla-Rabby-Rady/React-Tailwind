@@ -13,13 +13,19 @@ import Auth from './layouts/Auth';
 import Landing from './views/Landing'
 import Profile from './views/Profile'
 import Index from './views/Index'
+import Login from './views/auth/Login';
+import Register from './views/auth/Register';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+        {/* <Auth/> */}
     <Routes>
            {/* add routes with layout  */}
-      <Route path='/admin' element={<Admin />}/>
-      <Route path='/auth' element={<Auth />}/>
+      <Route path='/admin/*' element={<Admin />}/>
+      <Route path='/auth/*' element={<Auth />}/>
+
+      
+
 
       {/* add routes without layouts  */}
       <Route path='/landing' element={<Landing />}/>
